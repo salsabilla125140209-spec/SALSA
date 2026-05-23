@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Salsa</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#f8efe3;
+}
+
+/* Navbar */
+header{
+    background:#e7d3b5;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#5a4632;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#5a4632;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    min-height:80vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    padding:50px;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+    color:#4b3726;
+}
+
+.hero-text p{
+    font-size:22px;
+    color:#5e4b3c;
+}
+
+.hero img{
+    width:350px;
+    height:450px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* About */
+.about{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.about h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#4b3726;
+}
+
+.about p{
+    font-size:22px;
+    margin-bottom:30px;
+    color:#5e4b3c;
+}
+
+/* Social Button */
+.social{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.social a{
+    text-decoration:none;
+    background:#d8b892;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.social a:hover{
+    background:#b88d61;
+    transform:translateY(-3px);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero img{
+    width:280px;
+    height:360px;
+}
+
+.hero-text h1{
+    font-size:38px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Salsa Portofolio</div>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#kontak">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-text">
+        <h1>Hi!, saya Salsa...</h1>
+        <p>
+            Saya seorang mahasiswa Informatika<br>
+            Institut Teknologi Sumatera (ITERA)
+        </p>
+    </div>
+
+    <!-- Ganti foto.jpg dengan nama file fotomu -->
+    <img src="fotosalsa.jpeg" alt="Foto Salsa">
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        Saya adalah mahasiswa semester 2 Program Studi Teknik Informatika
+        yang memiliki minat dalam pengembangan web, desain antarmuka,
+        dan teknologi informasi.
+    </p>
+
+    <div class="social" id="kontak">
+
+        <a href="https://www.instagram.com/sal_wyb?igsh=aHQzNHc4czd5NWZl"
+           target="_blank">
+           Instagram
+        </a>
+
+        <a href="https://www.tiktok.com/@wyibie_?_r=1&_t=ZS-96YENpX5iGv"
+           target="_blank">
+           TikTok
+        </a>
+
+        <a href="mailto:salsabillaramadhaniwibowo@gmail.com">
+           Email
+        </a>
+
+    </div>
+
+</section>
+
+</body>
+</html>
